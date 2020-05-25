@@ -1,0 +1,10 @@
+Package: ropenms
+Title: OpenMS R Wrapper
+Version: 0.1.0
+Author: Shekhar Shukla
+Maintainer: ? <?>
+Description: Provides wrapper functions for, 
+    the pyOpenMS library.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
