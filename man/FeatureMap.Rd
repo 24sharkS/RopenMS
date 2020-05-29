@@ -18,10 +18,20 @@ FeatureMap Interface
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
+\item \href{#method-new}{\code{FeatureMap$new()}}
 \item \href{#method-getFeature}{\code{FeatureMap$getFeature()}}
 \item \href{#method-set_py_obj}{\code{FeatureMap$set_py_obj()}}
 \item \href{#method-get_py_obj}{\code{FeatureMap$get_py_obj()}}
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{FeatureMap$new()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-getFeature"></a>}}

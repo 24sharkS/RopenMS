@@ -6,16 +6,20 @@
 #' \code{$getFeature()} Get specific feature by index.
 #'
 #' @name FeatureMap
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export
 FeatureMap <- R6::R6Class("FeatureMap",cloneable = FALSE,
                private = list(
-                 py_obj = ropenms$FeatureMap()
+                 py_obj = NULL
                ),
 
                public = list(
+
+                 initialize = function(){
+                   private$py_obj = ropenms$FeatureMap()
+                 },
 
                   #' @description Get specfic feature by index.
                   #'

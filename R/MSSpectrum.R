@@ -18,18 +18,22 @@
 #' \code{$size()} Get the count of peaks.
 #'
 #' @name MSSpectrum
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export
 MSSpectrum <- R6::R6Class("MSSpectrum",cloneable = FALSE,
 
               private = list(
-                py_obj = ropenms$MSSpectrum()
+                py_obj = NULL
               ),
 
 
               public = list(
+
+                initialize = function(){
+                  private$py_obj = ropenms$MSSpectrum()
+                },
 
                 #' @description Get Spectrum Level
                 #'

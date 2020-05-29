@@ -8,18 +8,22 @@
 #' \code{$store()} Store details in IdXML file.
 #'
 #' @name IdXMLFile
-#' @include ropenms-global.R
 #' @importFrom reticulate r_to_py
 #' @importFrom reticulate py_to_r
+#' @include package.r
 NULL
 
 #' @export
 IdXMLFile <- R6::R6Class("IdXMLFile",cloneable = FALSE,
               private = list(
-                py_obj = ropenms$IdXMLFile()
+                py_obj = NULL
               ),
 
               public = list(
+
+                initialize = function(){
+                  private$py_obj = ropenms$IdXMLFile()
+                },
 
                 #' @description Load details from IdXML file
                 #'

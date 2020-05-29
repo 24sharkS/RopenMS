@@ -19,7 +19,7 @@ Imports:
     R6,
     reticulate
 Collate: 
-    'ropenms-global.R'
+    'package.r'
     'Feature.R'
     'FeatureMap.R'
     'FeatureXMLFile.R'
@@ -28,4 +28,4 @@ Collate:
     'MSSpectrum.R'
     'MzMLFile.R'
     'ignore.R'
-    'zzz.R'
+    'ropenms-global.R'

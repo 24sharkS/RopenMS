@@ -16,16 +16,20 @@
 #' \code{$size()} Get total number of experiments.
 #'
 #' @name MSExperiment
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export
 MSExperiment <- R6::R6Class("MSExperiment",cloneable = FALSE,
                 private = list(
-                  py_obj = ropenms$MSExperiment()
+                  py_obj = NULL
                 ),
 
                 public = list(
+
+                  initialize = function(){
+                    private$py_obj <- ropenms$MSExperiment()
+                  },
 
                   #' @description Get Spectrum Levels.
                   #'

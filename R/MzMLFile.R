@@ -8,7 +8,7 @@
 #' \code{$store()} Store details in MzML file.
 #'
 #' @name MzMLFile
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export

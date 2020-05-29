@@ -8,16 +8,20 @@
 #' \code{$getMZ()} Get Mass to Charge(M/Z) value of feature.
 #'
 #' @name Feature
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export
 Feature <- R6::R6Class("Feature",cloneable = FALSE,
             private = list(
-              py_obj = ropenms$Feature()
+              py_obj = NULL
             ),
 
             public = list(
+
+              initialize = function(){
+                private$py_obj = ropenms$Feature()
+              },
 
               #' @description Get Feature ID
               #'

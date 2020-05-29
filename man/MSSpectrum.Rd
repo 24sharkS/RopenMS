@@ -30,6 +30,7 @@ MSSpectrum Interface
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
+\item \href{#method-new}{\code{MSSpectrum$new()}}
 \item \href{#method-getMSLevel}{\code{MSSpectrum$getMSLevel()}}
 \item \href{#method-setMSLevel}{\code{MSSpectrum$setMSLevel()}}
 \item \href{#method-getRT}{\code{MSSpectrum$getRT()}}
@@ -40,6 +41,15 @@ MSSpectrum Interface
 \item \href{#method-set_py_obj}{\code{MSSpectrum$set_py_obj()}}
 \item \href{#method-get_py_obj}{\code{MSSpectrum$get_py_obj()}}
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{MSSpectrum$new()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-getMSLevel"></a>}}

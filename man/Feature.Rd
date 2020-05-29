@@ -20,11 +20,21 @@ Feature Interface
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
+\item \href{#method-new}{\code{Feature$new()}}
 \item \href{#method-getUniqueId}{\code{Feature$getUniqueId()}}
 \item \href{#method-getMZ}{\code{Feature$getMZ()}}
 \item \href{#method-set_py_obj}{\code{Feature$set_py_obj()}}
 \item \href{#method-get_py_obj}{\code{Feature$get_py_obj()}}
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Feature$new()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-getUniqueId"></a>}}

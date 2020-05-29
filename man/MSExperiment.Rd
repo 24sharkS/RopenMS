@@ -28,6 +28,7 @@ MSExperiment Interface
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
+\item \href{#method-new}{\code{MSExperiment$new()}}
 \item \href{#method-getMSLevels}{\code{MSExperiment$getMSLevels()}}
 \item \href{#method-getNrSpectra}{\code{MSExperiment$getNrSpectra()}}
 \item \href{#method-getSpectra}{\code{MSExperiment$getSpectra()}}
@@ -37,6 +38,15 @@ MSExperiment Interface
 \item \href{#method-set_py_obj}{\code{MSExperiment$set_py_obj()}}
 \item \href{#method-get_py_obj}{\code{MSExperiment$get_py_obj()}}
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{MSExperiment$new()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-getMSLevels"></a>}}

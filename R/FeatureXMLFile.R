@@ -8,16 +8,20 @@
 #' \code{$store()} Store details in MzML file.
 #'
 #' @name FeatureXMLFile
-#' @include ropenms-global.R
+#' @include package.r
 NULL
 
 #' @export
 FeatureXMLFile <- R6::R6Class("FeatureXMLFile",cloneable = FALSE,
                   private = list(
-                    py_obj = ropenms$FeatureXMLFile()
+                    py_obj = NULL
                   ),
 
                   public = list(
+
+                    initialize = function(){
+                      private$py_obj = ropenms$FeatureXMLFile()
+                    },
 
                     #' @description Load Features from FeatureXML file.
                     #'
