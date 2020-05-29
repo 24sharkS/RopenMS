@@ -36,12 +36,15 @@ IdXMLFile <- R6::R6Class("IdXMLFile",cloneable = FALSE,
                   # but we need to save the reference for conversion later.
                   prot = r_to_py(protein_ids)
                   pep = r_to_py(peptide_ids)
+
                   private$py_obj$load(filename,prot,pep)
 
+                  prot <- py_to_r(prot)
+                  pep <- py_to_r(pep)
                   # This allows the change to reflect in actual lists passed as arguments,
                   # since R uses pass-by-value semantics.
-                  eval.parent(substitute(protein_ids<-py_to_r(prot)))
-                  eval.parent(substitute(peptide_ids<-py_to_r(pep)))
+                  eval.parent(substitute(protein_ids<-prot))
+                  eval.parent(substitute(peptide_ids<-pep))
                 },
 
 
