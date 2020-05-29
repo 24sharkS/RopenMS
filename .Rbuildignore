@@ -1,2 +1,4 @@
 ^ropenms\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
+^appveyor\.yml$
