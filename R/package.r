@@ -1,4 +1,4 @@
-ropenms <- reticulate::import("pyopenms")
+ropenms <- NULL
 
 .onLoad <- function(libname, pkgname) {
 
@@ -7,6 +7,7 @@ ropenms <- reticulate::import("pyopenms")
 
 }
 
-#get_python_obj <- function(){
-#  return(ropenms)
-#}
+#' To get ropenms object
+get_python_obj <- function(){
+  return(ropenms)
+}

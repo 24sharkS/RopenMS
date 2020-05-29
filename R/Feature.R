@@ -20,7 +20,7 @@ Feature <- R6::R6Class("Feature",cloneable = FALSE,
             public = list(
 
               initialize = function(){
-                private$py_obj = ropenms$Feature()
+                private$py_obj = get_python_obj()$Feature()
               },
 
               #' @description Get Feature ID

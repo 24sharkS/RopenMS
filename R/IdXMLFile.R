@@ -22,7 +22,7 @@ IdXMLFile <- R6::R6Class("IdXMLFile",cloneable = FALSE,
               public = list(
 
                 initialize = function(){
-                  private$py_obj = ropenms$IdXMLFile()
+                  private$py_obj <- get_python_obj()$IdXMLFile()
                 },
 
                 #' @description Load details from IdXML file

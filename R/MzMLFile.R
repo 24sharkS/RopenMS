@@ -14,10 +14,14 @@ NULL
 #' @export
 MzMLFile <- R6::R6Class("MzMLFile",cloneable = FALSE,
             private = list(
-              py_obj = ropenms$MzMLFile()
+              py_obj = NULL
             ),
 
             public = list(
+
+              initialize = function(){
+                private$py_obj <- get_python_obj()$MzMLFile()
+              },
 
               #' @description Load details from MzML file.
               #'

@@ -20,7 +20,7 @@ FeatureXMLFile <- R6::R6Class("FeatureXMLFile",cloneable = FALSE,
                   public = list(
 
                     initialize = function(){
-                      private$py_obj = ropenms$FeatureXMLFile()
+                      private$py_obj <- get_python_obj()$FeatureXMLFile()
                     },
 
                     #' @description Load Features from FeatureXML file.

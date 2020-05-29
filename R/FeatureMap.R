@@ -18,7 +18,7 @@ FeatureMap <- R6::R6Class("FeatureMap",cloneable = FALSE,
                public = list(
 
                  initialize = function(){
-                   private$py_obj = ropenms$FeatureMap()
+                   private$py_obj <- get_python_obj()$FeatureMap()
                  },
 
                   #' @description Get specfic feature by index.

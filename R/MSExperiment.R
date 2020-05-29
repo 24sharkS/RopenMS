@@ -28,7 +28,7 @@ MSExperiment <- R6::R6Class("MSExperiment",cloneable = FALSE,
                 public = list(
 
                   initialize = function(){
-                    private$py_obj <- ropenms$MSExperiment()
+                    private$py_obj <- get_python_obj()$MSExperiment()
                   },
 
                   #' @description Get Spectrum Levels.

@@ -20,9 +20,19 @@ MzMLFile Interface
 \section{Methods}{
 \subsection{Public methods}{
 \itemize{
+\item \href{#method-new}{\code{MzMLFile$new()}}
 \item \href{#method-load}{\code{MzMLFile$load()}}
 \item \href{#method-store}{\code{MzMLFile$store()}}
 }
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-new"></a>}}
+\if{latex}{\out{\hypertarget{method-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{MzMLFile$new()}\if{html}{\out{</div>}}
+}
+
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-load"></a>}}
