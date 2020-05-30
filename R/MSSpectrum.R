@@ -46,7 +46,7 @@ MSSpectrum <- R6::R6Class("MSSpectrum",cloneable = FALSE,
                 #'
                 #' @param level level number.
                 setMSLevel = function(level){
-                  private$py_obj$setMSLevel(level)
+                  private$py_obj$setMSLevel(as.integer(level))
                 },
 
                 #' @description Get Retention Time
