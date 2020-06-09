@@ -28,6 +28,7 @@ FeatureMap <- R6::R6Class("FeatureMap",cloneable = FALSE,
                   #' @return Feature object.
                   getFeature = function(index){
                       # wrapping the python object.
+                      if(as.integer(index) <= 0) stop("index must be > 0")
                       feat <- Feature$new()
                       feat$set_py_obj(private$py_obj[index-1])
                       return(feat)
