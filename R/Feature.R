@@ -27,7 +27,13 @@ Feature <- R6::R6Class("Feature",cloneable = FALSE,
               #'
               #' @return feature ID.
               getUniqueId = function(){
-                private$py_obj$getUniqueId()
+                
+                r_obj <<- self$get_py_obj()
+                reticulate::py_run_string("res = str(r.r_obj.getUniqueId())")
+                rm(r_obj,envir = sys.frame(-1))
+                bigInt <- gmp::as.bigz(reticulate::py$res)
+                return(bigInt)
+                 #private$py_obj$getUniqueId()
               },
 
               #' @description Get Mass to Charge(M/Z) value of feature.
