@@ -28,4 +28,3 @@ Collate:
     'MSSpectrum.R'
     'MzMLFile.R'
     'ignore.R'
-    'ropenms-global.R'
